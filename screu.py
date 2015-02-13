@@ -3,7 +3,10 @@
 # $('.size1of3').each(function() {var x =  $(this).find('a:first');console.log(z.attr('title') + ' ' + x.attr('href'))});
 
 import requests
-import bs4
+try:
+	import bs4
+except:
+	import BeautifulSoup as bs4
 import openpyxl
 import logging
 from openpyxl import Workbook
@@ -30,10 +33,10 @@ for i in range(1,21266):
 				i,
 				])
 		
-		print "#%s" % i,
+		print ("#%s" % i),
 
 	except Exception as err:
-		print "Erro na pagina %s" % i
+		print ("Erro na pagina %s" % i)
 		logging.exception(u"Erro na pagina %s" % i) 
 
 
