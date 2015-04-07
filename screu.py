@@ -5,7 +5,7 @@
 import requests
 try:
 	import bs4
-except:
+except ImportError:
 	import BeautifulSoup as bs4
 import openpyxl
 import logging
