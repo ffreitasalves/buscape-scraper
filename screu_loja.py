@@ -1,6 +1,5 @@
 import requests
 import bs4
-import openpyxl
 import logging
 from openpyxl import load_workbook
 from openpyxl import Workbook
