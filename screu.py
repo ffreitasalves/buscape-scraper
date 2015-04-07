@@ -7,7 +7,7 @@ try:
 	import bs4
 except ImportError:
 	import BeautifulSoup as bs4
-import openpyxl
+
 import logging
 from openpyxl import Workbook
 
