@@ -37,7 +37,7 @@ for i in range(1,21266):
 
 	except Exception as err:
 		print ("Erro na pagina %s" % i)
-		logging.exception(u"Erro na pagina %s" % i) 
+		logging.exception(u"Erro na pagina %s", i) 
 
 
 wb.save('lojas.xlsx')
