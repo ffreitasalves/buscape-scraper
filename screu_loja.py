@@ -44,6 +44,6 @@ for row in ws.iter_rows():
 			)
 	except Exception as err:
 		print "Erro na pagina %s" % url
-		logging.exception(u"Erro na pagina %s" % url) 
+		logging.exception(u"Erro na pagina %s", url) 
 
 wb_escrita.save('lojas_final.xlsx')
